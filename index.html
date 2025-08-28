@@ -74,6 +74,10 @@
 								
 								<h3>Relevant Coursework:</h3>
 								<ul>
+									<li>Video Game Programming - <b>CIP</b></li>
+									<li>Computer Graphics - <b>CIP</b></li>
+									<li>Parallel Computation - <b>CIP</b></li>
+									<li>OS Design and Impl - <b>CIP</b></li>
 									<li>Machine Learning and Data Mining</li>
 									<li>Software Engineering</li>
 									<li>Computer Hardware and Operating Systems</li>
@@ -109,11 +113,10 @@
 								<p><b>Location: </b>Vancouver, Canada</br>
 								<b>Duration: </b>September 2024 - April 2025</br>
 								<b>Technologies: </b>C# .NET 8, TypeScript, XUnit, JEST, Node, PostgreSQL</p>
-								<p> Developed and maintained core application features while resolving critical bugs 
-									and addressing customer inquiries. Optimized internal caching mechanisms to improve memory efficiency 
-									and reduce system load. Participated in testing and validating Docker-based builds on remote GCP servers 
-									to ensure product stability. Enhanced test automation using Selenium, XUnit, and JEST, integrating tests 
-									into GitLab CI/CD pipelines to support reliable deployments.
+								<p> Developed backend features and API integrations across MyGeotab and MyAdmin for over 4 million users globally.
+									Optimized internal caching mechanisms to improve memory efficiency and reduce system load. Participated in testing and 
+									validating Docker-based builds on remote GCP servers to ensure product stability. Enhanced test automation using Selenium, 
+									XUnit, and JEST, integrating tests into GitLab CI/CD pipelines to support reliable deployments.
 								</p>
 								
 								<h3 class="major">Game Developer Intern @ Giro Gamez</h3>
@@ -284,48 +287,32 @@
 						<!-- Portfolio -->
 						<article id="portfolio">
 							<h2 class="major">Portfolio</h2>
-							<p>This portfolio is divided into categories that reflect my focus areas in engine systems, 
-								real-time rendering, gameplay programming, and other technical projects.</p>
-
-							<a href="#engine" class="button">Engine Projects</a>
-							<!--<p>Subsystems and architecture-focused projects including ECS frameworks, scene graphs, and Unreal Engine plugins.</p>-->
-							<p>Engine Project section in developement.</p>
-
-							<a href="#graphics" class="button">Graphics Projects</a>
-							<!--<p>Rendering experiments and shader-based projects built using OpenGL and GLSL, such as PBR, post-processing, and lighting models.</p>-->
-							<p>Graphics Project section in developement.</p>
-
-							<a href="#game" class="button">Game Projects</a>
-							<p>Games, projects, and prototypes made with Unreal Engine 5 and Unity.</p>
-
-							<a href="#other" class="button">Other Projects</a>
-							<p>Miscellaneous technical work such as cache simulators, custom libraries, and projects outside of game development.</p>
-						</article>
-
-						<!-- Engine -->
-						<article id="engine">
-							<h2 class="major">Engine Projects</h2>
-							<p>Section in developement.</p>
-						</article>
-
-						<!-- Graphics -->
-						<article id="graphics">
-							<h2 class="major">Graphics Projects</h2>
-							<p>Section in developement.</p>
-						</article>
-
-						<!-- Game -->
-						<article id="game">
-							<h2 class="major">Game Projects</h2>
-							<h3>Hush</h3>
+							<p>Selected games, systems, and libraries I’ve built across coursework and personal work. Below are highlights with live builds or repos where allowed.</p>
+							<nav class="toc">
+								<strong>Projects</strong>
+								<ul>
+								<li><a href="#hush">Hush</a></li>
+								<li><a href="#tokyo-frames">Tokyo Frames</a></li>
+								<li><a href="#silent-stalker">Silent Stalker of Level 0</a></li>
+								<li><a href="#void-rocks">Void Rocks</a></li>
+								<li><a href="#chess-3d">3D Multiplayer Chess</a></li>
+								<li><a href="#parallel-cache">Parallel CPU D-Cache Simulator</a></li>
+								<li><a href="#palgox">PalgoX</a></li>
+								<li><a href="#insightubc">InsightUBC</a></li>
+								<li><a href="#lin-alg-lib">Linear Algebra Static Library</a></li>
+								</ul>
+							</nav>
+							<h3 id="hush">Hush</h3>
 								<span class="image main"><img src="images/hush.png" alt="" /></span>
 								<p><b>Duration: </b>November 2024 - January 2025</br>
 								<b>Technologies: </b>Unreal Engine 5, Audacity Audio Editor, Git/GitHub</br>
 								<i><a href="https://skyl1ne0.itch.io/hush" target=”_blank”>Itch.io Game Page</a></i> - 
 								<i><a href="https://github.com/Aadit1004/Hush" target=”_blank”>Source Code</a></i></p>
-								<p>Developed an early remake of <i>Silent Stalker of Level 0</i>, featuring improved graphics, gameplay, and story. AI logic will be introduced in a future update.</p>
+								<p>Developed an early remake of <i>Silent Stalker of Level 0</i>, featuring improved graphics, gameplay, and story. AI logic will be introduced in a future update.
+								Optimized performance using Level Streaming, improving resource allocation and increasing frame rate stability by 20-30%. Designed Niagara particle systems and volumetric effects, 
+								maintaining visual fidelity while optimizing performance through culling, LODs, and pooling techniques.</p>
 							<hr />
-								<h3>Tokyo Frames</h3>
+								<h3 id="tokyo-frames">Tokyo Frames</h3>
 								<span class="image main"><img src="images/tokyoframes.png" alt="" /></span>
 								<p><b>Duration: </b>October 2024</br>
 								<b>Technologies: </b>Unreal Engine 5, Audacity Audio Editor, Git/GitHub</br>
@@ -334,7 +321,7 @@
 								<p>Developed a short 3D photography game set in a stylized Tokyo environment, with the main focus on learning and 
 									understanding UE5 Blueprints for gameplay and UI programming.</p>
 								<hr />
-							<h3>Silent Stalker of Level 0</h3>
+							<h3 id="silent-stalker">Silent Stalker of Level 0</h3>
 							<span class="image main"><img src="images/backrooms.jpg" alt="" /></span>
 								<p><b>Duration: </b>July 2023 - August 2023</br>
 								<b>Technologies: </b>C#, Unity, Visual Studio 2022, Git/GitHub</br>
@@ -343,7 +330,7 @@
 									focusing on graphics, post-processing, and NavMesh pathfinding, where players collect research notes while evading an AI monster using sound cues, 
 									all created using Unity, Visual Studio 2022, and managed with Git/GitHub.</p>
 								<hr />
-								<h3 >Void Rocks</h3>
+								<h3 id="void-rocks">Void Rocks</h3>
 								<span class="image main"><img src="images/voidRocks.png" alt="" /></span>
 								<p><b>Duration: </b>July 2023 - August 2023</br>
 								<b>Technologies: </b>C#, Unity, Piskel, VS Code</br>
@@ -352,7 +339,7 @@
 								<p>Developed an endless 2D pixel-art space shooter with multiple game modes, physics-based controls, custom pixel-art sprites, and a variety of enemies and power-ups, 
 									gaining proficiency in Unity's 2D Rigidbody physics, collision events, particle systems, and UI programming.</p>
 								<hr />
-								<h3 >3D Multiplayer Chess</h3>
+								<h3 id="chess-3d">3D Multiplayer Chess</h3>
 								<span class="image main"><img src="images/chess.jpg" alt="" /></span>
 								<p><b>Duration: </b>June 2023 - July 2023</br>
 								<b>Technologies: </b>C#, Unity, Photon PUN 2, Audacity Audio Editor, Visual Studio 2022, Git/GitHub</br>
@@ -360,12 +347,8 @@
 								<p>In my first internship, I solo developed a 3D multiplayer chess game using Unity, C#, and Photon PUN 2, focusing on matchmaking, online synchronization, and mobile optimization, 
 									with successful launches on the App Store and Google Play Store. Developed an AI chess bot using the Alpha-Beta Pruning algorithm, reducing unnecessary node evaluations by over 
 									<b>80%</b> for faster and more efficient AI decision-making.</p>
-						</article>
-
-						<!-- Other -->
-						<article id="other">
-							<h2 class="major">Other Projects</h2>
-							<h3>Parallel CPU D-Cache Simulator</h3>
+									<hr />
+							<h3 id="parallel-cache">Parallel CPU D-Cache Simulator</h3>
 									<p><b>Duration: </b>February 2025 - March 2025</br>
 									<b>Technologies: </b>C++, Catch2, Make, Valgrind, Gprof, Clang-Tidy</br>
 									<i><a href="https://github.com/Aadit1004/ParallelCacheSim" target=”_blank”>Source Code</a></i></p>
@@ -373,7 +356,7 @@
 										with configurable cache sizes, associativity, replacement policies, and write policies. 
 										The simulation supports multi-threaded execution to evaluate cache efficiency under parallel workloads.</p>
 							<hr />
-								<h3>PalgoX</h3>
+								<h3 id="palgox">PalgoX</h3>
 									<p><b>Duration: </b>May 2024 - August 2024</br>
 									<b>Technologies: </b>C++, OpenMP, Catch2, CLion, Git/GitHub</br>
 									<i><a href="https://github.com/Aadit1004/PAlgoX" target=”_blank”>Source Code</a></i></p>
@@ -381,17 +364,17 @@
 										matrix, graph, and math operations, optimized for a <b>5.52x</b> average speedup using OpenMP and multithreading, 
 										with robust unit testing via Catch2, and managed through Kanban agile methodologies and Git/GitHub.</p>
 								<hr />
-								<h3>InsightUBC</h3>
+								<h3 id="insightubc">InsightUBC</h3>
 								<p><b>Duration: </b>January 2024 - April 2024</br>
 									<b>Course: </b>UBC CPSC 310 – Software Engineering</br>
 									<b>Technologies: </b>TypeScript, HTML, CSS, Chai/Mocha, D3.js, Node.js, IntelliJ</br>
 									<i><a href="https://youtu.be/75JvkotGXSQ" target=”_blank”>Video Showcase</a> (Source code unavailable due to course policy)</i></p>
 									<p>This collaborative course project was completed with one partner and involved building a full-stack web application to manage and visualize historical UBC course data. 
-									I was primarily responsible for the <b>query engine</b>, including query <b>validation and execution logic</b>, ensuring accurate and efficient filtering of large datasets. 
+									I was primarily responsible for the <b>query engine</b>, including <b>query validation and execution logic</b>, ensuring accurate and efficient filtering of large datasets. 
 									The project also included implementing RESTful APIs, developing a comprehensive test suite using Black Box and Glass Box testing methodologies, 
 									and participating in weekly Scrum meetings for iterative feedback and task prioritization.</p>
 								<hr />
-								<h3>Linear Algebra Static Library</h3>
+								<h3 id="lin-alg-lib">Linear Algebra Static Library</h3>
 								<p><b>Duration: </b>May 2023 - June 2023</br>
 									<b>Technologies: </b>C++, MSTest, Visual Studio 2022, Git/GitHub</br>
 									<i><a href="https://github.com/Aadit1004/Linear-Algebra-Static-Library" target=”_blank”>Source Code</a></i></p>
