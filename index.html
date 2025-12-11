@@ -75,9 +75,9 @@
 								<h3>Relevant Coursework:</h3>
 								<ul>
 									<li>Video Game Programming - <b>CIP</b></li>
-									<li>Computer Graphics - <b>CIP</b></li>
-									<li>Parallel Computation - <b>CIP</b></li>
-									<li>OS Design and Impl - <b>CIP</b></li>
+									<li>Computer Graphics</li>
+									<li>Parallel Computation</li>
+									<li>Advanced Operating Systems</li>
 									<li>Machine Learning and Data Mining</li>
 									<li>Software Engineering</li>
 									<li>Computer Hardware and Operating Systems</li>
@@ -103,8 +103,8 @@
 								<h2 class="major">Experience</h2>
 								<h3 class="major">Technical Skills</h3>
 								<ul>
-									<li><b>Languages:</b> C/C++, C#, TypeScript</li>
-									<li><b>Tools & Frameworks:</b> .NET 8, Node, PostgreSQL, Git, Unreal Engine 5, Unity</li>
+									<li><b>Languages:</b> C/C++, C#, TypeScript, Erlang, GLSL</li>
+									<li><b>Tools & Frameworks:</b> ARMv8-A, QEMU, Barrelfish OS, Linux, Docker, .NET 8, PostgreSQL, Git, Unreal Engine 5, Unity</li>
 									<li><b>Testing:</b> XUnit, Catch2, Selenium, Jest, Mocha/Chai, JUnit5, MSTest</li>
 									<li><b>Build and Performance Tools:</b> Make, CMake, Valgrind, Gprof, Clang-Tidy</li>
 								</ul>
@@ -120,7 +120,7 @@
 								</p>
 								
 								<h3 class="major">Game Developer Intern @ Giro Gamez</h3>
-								<p><b>Location: </b>Dubai, U.A.E.</br>
+								<p><b>Location: </b>Dubai, U.A.E. (Remote)</br>
 								<b>Duration: </b>July 2023 - August 2023</br>
 								<b>Technologies: </b>C#, Unity, Photon Pun 2, Git/GitHub</p>
 								<p>Independently designed and developed two 3D mobile games: a multiplayer chess game and a sound-based survival maze game. 
@@ -291,7 +291,7 @@
 							<nav class="toc">
 								<strong>Projects</strong>
 								<ul>
-								<li>Operating System Kernel (UBC CPSC 436A - <strong>In Progress</strong>)</li>
+								<li><a href="custom-os">Operating System Kernel (UBC CPSC 436A)</a></li>
 								<li><a href="#parallel-cache">Parallel CPU D-Cache Simulator</a></li>
 								<li><a href="#palgox">PalgoX (Parallel Algorithms Library)</a></li>
 								<li><a href="#insightubc">InsightUBC (Full Stack Web Application - UBC CPSC 310)</a></li>
@@ -306,6 +306,15 @@
 								<li><a href="#chess-3d">3D Multiplayer Chess (Unity Game)</a></li>
 								</ul>
 							</nav>
+							<h3 id="custom-os">Custom OS Kernel</h3>
+									<p><b>Duration: </b>September 2025 - December 2025</br>
+									<b>Technologies: </b>C, Barrelfish OS, QEMU, ARMv8-A, Docker, Toradex iMX8X, Git</br>
+									<i>(Source code unavailable due to course policy)</i></p>
+									<p>Designed and implemented a custom OS kernel in C on Barrelfish OS as part of a small team, adding support for capabilities, 
+										virtual memory, multicore processing, and message passing. Implemented memory management and virtual memory subsystems using dual-key and augmented AVL trees, 
+										bitmaps, and linked lists to achieve fast O(log n) allocation, mapping, and coalescing with low fragmentation. Built message-passing RPC over shared frames with 
+										waitsets and ring buffers for thread-safe, deadlock-free inter-process and cross-core communication, using Docker and Git for development.</p>
+							<hr />
 							<h3 id="parallel-cache">Parallel CPU D-Cache Simulator</h3>
 									<p><b>Duration: </b>February 2025 - March 2025</br>
 									<b>Technologies: </b>C++, Catch2, Make, Valgrind, Gprof, Clang-Tidy</br>
