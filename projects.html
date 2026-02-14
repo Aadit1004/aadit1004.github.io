@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aadit Rao — Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Aadit Rao</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="work.html">Work</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="https://github.com/yourhandle" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noreferrer">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <h1>Projects</h1>
+
+    <p>
+      Featured projects across game development and systems programming, including coursework and independent work. 
+      For a complete list of my games, see <a href="https://skyl1ne0.itch.io/" target="_blank" rel="noreferrer">my itch.io page</a>.
+    </p>
+
+    <h2>Active Projects</h2>
+
+    <section class="section">
+      <h3>Axiom</h3>
+      <p>Code: <a href="https://github.com/Aadit1004/Axiom" target="_blank" rel="noreferrer">github.com/aadit1004/axiom</a></p>
+      <p>
+        Axiom is a work-in-progress C++ static library with core utilities, linear algebra, optimization routines, and 
+        lightweight I/O for math-heavy applications.
+      </p>
+      <!-- Optional image -->
+      <!-- <img src="images/project.png" alt="Project screenshot" style="max-width:100%; border:1px solid #e5e7eb; border-radius:12px;" /> -->
+    </section>
+
+    <hr />
+
+    <h2>Past Projects</h2>
+    <section class="section">
+
+      <h3>Custom OS Kernel (UBC CPSC 436A)</h3>
+      <p class="small"><em>Source code unavailable due to course policy</em></p>
+      <p>Designed and implemented a custom OS kernel in C on Barrelfish OS as part of a small team, 
+        adding support for capabilities, virtual memory, multicore processing, and message passing. 
+        Implemented memory management and virtual memory subsystems using dual-key and augmented AVL trees, 
+        bitmaps, and linked lists to achieve fast O(log n) allocation, mapping, and coalescing with low fragmentation. 
+        Built message-passing RPC over shared frames with waitsets and ring buffers for thread-safe, deadlock-free inter-process 
+        and cross-core communication, using Docker and Git for development.</p>
+
+      <h3>Parallel CPU D-Cache Simulator</h3>
+      <p class="small">Code: <a href="https://github.com/Aadit1004/ParallelCacheSim">github.com/Aadit1004/ParallelCacheSim</a></p>
+      <p>This project is a performance-focused CLI simulator designed to model multi-level data caching (D-Cache) behavior in CPUs, 
+        with configurable cache sizes, associativity, replacement policies, and write policies. The simulation supports multi-threaded 
+        execution under the MESI protocal to evaluate cache efficiency under parallel workloads.</p>
+      <img src="images/cache_sim.png" alt="Cache Sim screenshot" style="max-width:100%; border:1px solid #e5e7eb; border-radius:12px;" />
+
+      <h3>Hush (UE5 Game)</h3>
+      <p class="small">Code: <a href="https://github.com/Aadit1004/Hush" target="_blank" rel="noreferrer">github.com/Aadit1004/Hush</a></p>
+      <p>Developed an early remake of Silent Stalker of Level 0, featuring improved graphics, gameplay, and story. 
+        AI logic will be introduced in a future update. Optimized performance using Level Streaming, improving resource 
+        allocation and increasing frame rate stability by 20-30%. Designed Niagara particle systems and volumetric effects, 
+        maintaining visual fidelity while optimizing performance through culling, LODs, and pooling techniques.</p>
+      <img src="images/hush_2.png" alt="Hush screenshot" style="max-width:100%; border:1px solid #e5e7eb; border-radius:12px;" />
+    </section>
+  </main>
+</body>
+</html>
