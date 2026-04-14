@@ -90,7 +90,7 @@ h3 {
   margin: 0 0 14px;
 }
 
-p { margin: 0 0 18px; color: var(--muted); font-size: 18px; }
+p { margin: 0 0 18px; color: var(--text); font-size: 18px; }
 
 .section p { max-width: 70ch; }
 
@@ -184,35 +184,122 @@ hr {
 
 .home-main {
   padding-top: 72px;
-  text-align: center;
 }
 
 .home-header {
-  margin-bottom: 36px;
+  margin-bottom: 28px;
 }
 
 .home-header h1 {
   margin: 0 0 10px;
+  font-size: clamp(32px, 4vw, 48px);
 }
 
 .home-tagline {
   font-size: 16px;
   color: var(--muted);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
 }
 
 .intro {
-  max-width: 62ch;
-  margin: 0 auto;
+  max-width: 65ch;
 }
 
 .intro p {
   color: var(--text);
   font-size: 17px;
   margin: 0 0 16px;
-  text-align: center;
+  text-align: left;
 }
 
 .intro p:last-child {
   margin-bottom: 0;
+}
+
+.project-card {
+  background: #f3f4f6;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 16px;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 6px;
+}
+
+.project-meta {
+  font-size: 14px;
+  color: var(--text);
+  margin: 0 0 10px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: 600;
+  background: #ede9fe;
+  color: #5b21b6;
+  border-radius: 6px;
+  padding: 3px 10px;
+}
+
+.project-card p {
+  font-size: 16px;
+  color: var(--text);
+  margin: 0 0 14px;
+}
+
+.project-card p:last-child {
+  margin-bottom: 0;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  display: block;
+  margin-top: 14px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.card-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.card-header-text h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.card-header-text .project-meta {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.company-logo {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 6px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  background: #fff;
+  display: inline-block;
 }

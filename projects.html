@@ -22,68 +22,55 @@
   </header>
 
   <main class="main">
-    <h1>Projects</h1>
+  <h1>Projects</h1>
+  <p>
+    Featured projects across systems programming, machine learning and game development, including coursework and independent work.
+    For a complete list of my games, see <a href="https://skyl1ne0.itch.io/" target="_blank" rel="noreferrer">my itch.io page</a>.
+  </p>
 
-    <p>
-      Featured projects across systems programming, machine learning and game development, including coursework and independent work. 
-      For a complete list of my games, see <a href="https://skyl1ne0.itch.io/" target="_blank" rel="noreferrer">my itch.io page</a>.
-    </p>
+  <div class="project-card">
+    <h3>Rejection Sampling Optimization</h3>
+    <div class="project-meta">UBC CPSC 440 &nbsp;·&nbsp; <a href="https://github.com/Aadit1004/RejectionSamplingOptimization" target="_blank" rel="noreferrer">github.com/Aadit1004/RejectionSamplingOptimization</a></div>
+    <div class="project-tags">
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Python</span>
+    </div>
+    <p>Developed and evaluated methods to improve rejection sampling efficiency using Gaussian mixture proposals, whitening-based reparameterization, and parallelized sampling.</p>
+    <img src="assets/images/mixture_complex_multimodal_target.png" alt="Mixture Gaussian screenshot" />
+  </div>
 
-    <!--
+  <div class="project-card">
+    <h3>Custom OS Kernel</h3>
+    <div class="project-meta">UBC CPSC 436A &nbsp;·&nbsp; <a href="assets/pdfs/Zander_436A_Report.pdf" target="_blank" rel="noreferrer">Final report (PDF)</a> &nbsp;·&nbsp; <em>Source code unavailable due to course policy</em></div>
+    <div class="project-tags">
+      <span class="tag">Systems</span>
+      <span class="tag">C</span>
+    </div>
+    <p>Designed and implemented a custom OS kernel in C on Barrelfish OS as part of a small team, adding support for capabilities, virtual memory, multicore processing, and message passing. Implemented memory management using dual-key and augmented AVL trees, bitmaps, and linked lists for fast O(log n) allocation with low fragmentation.</p>
+  </div>
 
-    <h2>Active Projects</h2>
+  <div class="project-card">
+    <h3>Parallel CPU D-Cache Simulator</h3>
+    <div class="project-meta"><a href="https://github.com/Aadit1004/ParallelCacheSim" target="_blank" rel="noreferrer">github.com/Aadit1004/ParallelCacheSim</a></div>
+    <div class="project-tags">
+      <span class="tag">Systems</span>
+      <span class="tag">C++</span>
+    </div>
+    <p>A performance-focused CLI simulator modeling multi-level D-Cache behavior in CPUs, with configurable cache sizes, associativity, replacement and write policies. Supports multi-threaded execution under the MESI protocol to evaluate cache efficiency under parallel workloads.</p>
+    <img src="assets/images/cache_sim.png" alt="Cache Sim screenshot" />
+  </div>
 
-    
-    <section class="section">
-      <h3>Rejection Sampling Optimization (UBC CPSC 440)</h3>
-      <p class="small"><strong>Code:</strong> <a href="https://github.com/Aadit1004/RejectionSamplingOptimization" target="_blank" rel="noreferrer">github.com/aadit1004/RejectionSamplingOptimization</a></p>
-      <p>
-        Developing and evaluating methods to improve rejection sampling efficiency using Gaussian mixture proposals, whitening-based reparameterization, and parallelized sampling.
-      </p>
-      <!-- Optional image -->
-      <!-- <img src="images/project.png" alt="Project screenshot" style="max-width:100%; border:1px solid #e5e7eb; border-radius:12px;" /> -->
-    <!-- </section> -->
-    
+  <div class="project-card">
+    <h3>Hush (UE5 Game)</h3>
+    <div class="project-meta"><a href="https://github.com/Aadit1004/Hush" target="_blank" rel="noreferrer">github.com/Aadit1004/Hush</a></div>
+    <div class="project-tags">
+      <span class="tag">Game Dev</span>
+      <span class="tag">Unreal Engine 5</span>
+    </div>
+    <p>An early remake of Silent Stalker of Level 0 with improved graphics, gameplay, and story. Optimized performance using Level Streaming, increasing frame rate stability by 20-30%. Designed Niagara particle systems and volumetric effects, maintaining visual fidelity through culling, LODs, and pooling techniques.</p>
+    <img src="assets/images/hush_2.png" alt="Hush screenshot" />
+  </div>
+</main>
 
-    
-    <hr />
-
-    <!-- <h2>Past Projects</h2> -->
-    <section class="section">
-
-      <h3>Rejection Sampling Optimization (UBC CPSC 440)</h3>
-      <p class="small"><strong>Code:</strong> <a href="https://github.com/Aadit1004/RejectionSamplingOptimization" target="_blank" rel="noreferrer">github.com/aadit1004/RejectionSamplingOptimization</a></p>
-      <!-- <p class="small"><strong>Report:</strong> <a href="assets/pdfs/Zander_436A_Report.pdf" target="_blank" rel="noreferrer">Final report (PDF)</a></p> -->
-      <p>
-        Developed and evaluated methods to improve rejection sampling efficiency using Gaussian mixture proposals, whitening-based reparameterization, and parallelized sampling.
-      </p>
-      <img src="assets/images/mixture_complex_multimodal_target.png" alt="Mixture Gaussian screenshot" style="max-width:100%; border:1px solid #e5e7eb; border-radius:12px;" />
-
-      <h3>Custom OS Kernel (UBC CPSC 436A)</h3>
-      <p class="small"><strong>Report:</strong> <a href="assets/pdfs/Zander_436A_Report.pdf" target="_blank" rel="noreferrer">Final report (PDF)</a></p>
-      <p class="small"><em>Source code unavailable due to course policy</em></p>
-      <p>Designed and implemented a custom OS kernel in C on Barrelfish OS as part of a small team, 
-        adding support for capabilities, virtual memory, multicore processing, and message passing. 
-        Implemented memory management and virtual memory subsystems using dual-key and augmented AVL trees, 
-        bitmaps, and linked lists to achieve fast O(log n) allocation, mapping, and coalescing with low fragmentation. 
-        Built message-passing RPC over shared frames with waitsets and ring buffers for thread-safe, deadlock-free inter-process 
-        and cross-core communication, using Docker and Git for development.</p>
-
-      <h3>Parallel CPU D-Cache Simulator</h3>
-      <p class="small"><strong>Code:</strong> <a href="https://github.com/Aadit1004/ParallelCacheSim">github.com/Aadit1004/ParallelCacheSim</a></p>
-      <p>This project is a performance-focused CLI simulator designed to model multi-level data caching (D-Cache) behavior in CPUs, 
-        with configurable cache sizes, associativity, replacement policies, and write policies. The simulation supports multi-threaded 
-        execution under the MESI protocal to evaluate cache efficiency under parallel workloads.</p>
-      <img src="assets/images/cache_sim.png" alt="Cache Sim screenshot" style="max-width:100%; border:1px solid #e5e7eb; border-radius:12px;" />
-
-      <h3>Hush (UE5 Game)</h3>
-      <p class="small"><strong>Code:</strong> <a href="https://github.com/Aadit1004/Hush" target="_blank" rel="noreferrer">github.com/Aadit1004/Hush</a></p>
-      <p>Developed an early remake of Silent Stalker of Level 0, featuring improved graphics, gameplay, and story. 
-        AI logic will be introduced in a future update. Optimized performance using Level Streaming, improving resource 
-        allocation and increasing frame rate stability by 20-30%. Designed Niagara particle systems and volumetric effects, 
-        maintaining visual fidelity while optimizing performance through culling, LODs, and pooling techniques.</p>
-      <img src="assets/images/hush_2.png" alt="Hush screenshot" style="max-width:100%; border:1px solid #e5e7eb; border-radius:12px;" />
-    </section>
-  </main>
 </body>
 </html>
