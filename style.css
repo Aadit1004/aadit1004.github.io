@@ -137,3 +137,82 @@ hr {
 .section ul li::marker {
   color: var(--muted);
 }
+
+.dropdown {
+  margin: 14px 0 18px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 6px 14px 10px;
+}
+
+.dropdown summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  padding: 6px 0 4px;
+}
+
+.dropdown summary::-webkit-details-marker { display: none; }
+
+.dropdown summary::before {
+  content: '▸';
+  font-size: 17px;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.dropdown[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.dropdown ul {
+  margin: 10px 0 0 0;
+  padding-left: 1.2em;
+  color: var(--text);
+  font-size: 17px;
+}
+
+.dropdown li {
+  margin: 5px 0;
+}
+
+.home-main {
+  padding-top: 72px;
+  text-align: center;
+}
+
+.home-header {
+  margin-bottom: 36px;
+}
+
+.home-header h1 {
+  margin: 0 0 10px;
+}
+
+.home-tagline {
+  font-size: 16px;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+}
+
+.intro {
+  max-width: 62ch;
+  margin: 0 auto;
+}
+
+.intro p {
+  color: var(--text);
+  font-size: 17px;
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+.intro p:last-child {
+  margin-bottom: 0;
+}
