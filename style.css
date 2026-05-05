@@ -303,3 +303,29 @@ hr {
   background: #fff;
   display: inline-block;
 }
+
+.skills-section {
+  margin-top: 48px;
+}
+
+.skills-label {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 18px;
+}
+
+.skills-group {
+  margin-bottom: 16px;
+}
+
+.skills-group-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #7a8088;
+  margin: 0 0 8px;
+}
